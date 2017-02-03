@@ -1,0 +1,15 @@
+{
+  "name": "vector2d.js",
+  "version": "1.0.0",
+  "description": "A 2d vector library",
+  "main": "vector2d.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Giovanni DiFeterici <gdifeterici@gmail.com> (giodif.com)",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
