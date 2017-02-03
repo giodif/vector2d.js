@@ -16,32 +16,6 @@ var Vector2D = function( x, y ){
 
         type : function(){ return __type; },
 
-        _debugDraw : function( ctx, orgn, clr ){
-
-            orgn = orgn || origin;
-
-            ctx.save();
-            
-            ctx.lineWidth   = 1.5;
-            ctx.strokeStyle = clr || "#999";
-            ctx.fillStyle   = clr || "#999";
-
-            ctx.beginPath(); 
-            ctx.moveTo( orgn.x, orgn.y );
-            ctx.lineTo( orgn.x + this.x, orgn.y + this.y );
-            ctx.stroke();
-            ctx.closePath();
-            
-            ctx.beginPath(); 
-            ctx.arc( orgn.x, orgn.y, 3, 0, Math.PI * 2 );
-            ctx.fill();
-            ctx.closePath();
-
-            ctx.restore();
-
-            return this;
-        },
-
         /* MUTATOR FUNCTIONS ********************/
         /****************************************/
         _smultiply : function( s ){
